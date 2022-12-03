@@ -59,3 +59,11 @@ Generated arguments for function train:
 
 for more information, run `python -m music_fsl.train -h`.
 
+### Uploading to PyPI
+
+To upload a new version to PyPI, run the following commands:
+
+```bash
+python setup.py sdist
+twine upload dist/* --skip-existing
+```
