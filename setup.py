@@ -4,7 +4,7 @@ from pathlib import Path
 
 setup(
     name='music_fsl',
-    version='0.1.2',
+    version='0.1.3',
     description='Few-shot learning for music instrument recognition using PyTorch',
     author='Hugo Flores García',
     author_email='hugofloresgarcia@u.northwestern.edu',
@@ -19,7 +19,7 @@ setup(
         "torch",
         "numpy",
         "torchaudio",
-        "torchmetrics",
+        "torchmetrics==0.10.3",
         "pytorch-lightning",
         "tensorboard",
         "argbind",
