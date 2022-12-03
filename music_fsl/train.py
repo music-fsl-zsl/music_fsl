@@ -36,7 +36,7 @@ class FewShotLearner(pl.LightningModule):
         learning_rate: float = 1e-3,
     ):
         super().__init__()
-        self.save_hyperparameters()
+        self.save_hyperparameters(ignore=["protonet"])
         self.protonet = protonet
         self.learning_rate = learning_rate
 
