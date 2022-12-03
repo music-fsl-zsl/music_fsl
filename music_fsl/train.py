@@ -42,7 +42,7 @@ class FewShotLearner(pl.LightningModule):
 
         self.loss = nn.CrossEntropyLoss()
         self.metrics = nn.ModuleDict({
-            'accuracy': Accuracy()
+            'accuracy': Accuracy(task='multiclass')
         })
 
     def configure_optimizers(self):
